@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-orange-500 text-white">
+
+    <div class="box-border mt-12 sm:mt-4 w-[97%] sm:w-[400px]  bg-emerald-700 grid grid-cols-1 text-center gap-4  border border-transparent rounded-2xl mx-auto h-[500px]">
+        <div>
+            <h1 class="bg-red-700 h-[50px] border border-transparent rounded-2xl mt-2 flex justify-center items-center font-bold text-2xl">Number guessing game</h1>
+            <p class="me-1" > A game By<a class="pt-3 underline" href="https://www.linkedin.com/in/ali-randhawa-a7a307247/"> ABRandhawa</a></p>
+            <p class="text-sm mt-4">Try and guess a random number between 1 and 100.</p>
+            <p class="text-sm">You have 7 attempts to guess the right number.</p>
+        </div>
+        <div>
+            <form class="form">
+                <label2 for="guessField" class="text-2xl " id="guess">Guess a number</label>
+                <input type="text" id="guessField" class="guessField border rounded-2xl text-black px-[10px]">
+                <input type="submit" id="subt" value="Submit guess" class="guessSubmit w-[200px] mt-3 p-[10px] bg-red-700 rounded-2xl border border-transparent cursor-pointer">
+            </form>
+        </div>
+        <div class="resultParas">
+            <p >Previous Guesses: <span class="guesses"></span></p>
+            <p >Guesses Remaining: <span class="lastResult">7</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+    <script src="../main.js"></script>
+</body>
+</html>
